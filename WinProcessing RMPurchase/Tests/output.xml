@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.5 on win32)" generated="20201223 09:36:58.420" rpa="false">
+<suite id="s1" name="RMPurchase" source="C:\EclipsePortable-All-cpf\EclipsePortable\Data\workspace\WinProcessing RMPurchase\Tests\RMPurchase.robot">
+<test id="s1-t1" name="Login Winprocessing UAT">
+<kw name="Sikuli Test Setup" library="TestUtils" type="setup">
+<kw name="Add Needed Image Path" library="TestUtils">
+<kw name="Add Image Path" library="SikuliLibrary">
+<doc>Add image path</doc>
+<arguments>
+<arg>${IMAGE_DIR}</arg>
+</arguments>
+<msg timestamp="20201223 09:37:04.955" level="INFO">Params: [C:\EclipsePortable-All-cpf\EclipsePortable\Data\workspace\WinProcessing RMPurchase\Tests\..\Images]</msg>
+<status status="PASS" starttime="20201223 09:37:04.907" endtime="20201223 09:37:04.956"></status>
+</kw>
+<status status="PASS" starttime="20201223 09:37:04.907" endtime="20201223 09:37:04.956"></status>
+</kw>
+<status status="PASS" starttime="20201223 09:37:04.903" endtime="20201223 09:37:04.957"></status>
+</kw>
+<kw name="Exit Program" library="ExitProgram">
+<kw name="Click Button with Sikuli -&gt; ${Scroll4} timeout ${3} sec." library="SikuliUtils">
+<kw name="Wait Until Screen Contain" library="SikuliLibrary">
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<arguments>
+<arg>${image}</arg>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20201223 09:37:06.255" level="INFO">Params: [Scroll4.png, 3]</msg>
+<msg timestamp="20201223 09:37:06.255" level="INFO" html="yes">&lt;img src='sikuli_captured/sikuliximage-1608691026234.png'/&gt;</msg>
+<status status="PASS" starttime="20201223 09:37:04.961" endtime="20201223 09:37:06.255"></status>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<doc>Click</doc>
+<arguments>
+<arg>${image}</arg>
+</arguments>
+<msg timestamp="20201223 09:37:07.209" level="INFO">Params: [Scroll4.png]</msg>
+<msg timestamp="20201223 09:37:07.209" level="INFO" html="yes">&lt;img src='sikuli_captured/sikuliximage-1608691026498.png'/&gt;
+[log] CLICK on L[1351,675]@S(0) (548 msec)</msg>
+<status status="PASS" starttime="20201223 09:37:06.256" endtime="20201223 09:37:07.209"></status>
+</kw>
+<status status="PASS" starttime="20201223 09:37:04.960" endtime="20201223 09:37:07.209"></status>
+</kw>
+<kw name="Click Button with Sikuli -&gt; ${Start} timeout ${3} sec." library="SikuliUtils">
+<kw name="Wait Until Screen Contain" library="SikuliLibrary">
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<arguments>
+<arg>${image}</arg>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20201223 09:37:07.664" level="INFO">Params: [Start.png, 3]</msg>
+<msg timestamp="20201223 09:37:07.664" level="INFO" html="yes">&lt;img src='sikuli_captured/sikuliximage-1608691027614.png'/&gt;</msg>
+<status status="PASS" starttime="20201223 09:37:07.220" endtime="20201223 09:37:07.664"></status>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<doc>Click</doc>
+<arguments>
+<arg>${image}</arg>
+</arguments>
+<msg timestamp="20201223 09:37:08.858" level="INFO">Params: [Start.png]</msg>
+<msg timestamp="20201223 09:37:08.858" level="INFO" html="yes">&lt;img src='sikuli_captured/sikuliximage-1608691027973.png'/&gt;
+[log] CLICK on L[25,690]@S(0) (539 msec)</msg>
+<status status="PASS" starttime="20201223 09:37:07.664" endtime="20201223 09:37:08.858"></status>
+</kw>
+<status status="PASS" starttime="20201223 09:37:07.219" endtime="20201223 09:37:08.858"></status>
+</kw>
+<kw name="Click Button with Sikuli -&gt; ${Logoff} timeout ${3} sec." library="SikuliUtils">
+<kw name="Wait Until Screen Contain" library="SikuliLibrary">
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<arguments>
+<arg>${image}</arg>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20201223 09:37:12.244" level="INFO">Params: [Logoff., 3]
+[error] ImagePath: find: not there: Logoff..png</msg>
+<msg timestamp="20201223 09:37:12.244" level="INFO" html="yes">&lt;img src='sikuli_captured/sikuliximage-1608691031922.png'/&gt;
+[error] ImagePath: find: not there: Logoff..png</msg>
+<msg timestamp="20201223 09:37:12.244" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(Logoff..png -- not valid!) S: 0.7</msg>
+<status status="FAIL" starttime="20201223 09:37:08.862" endtime="20201223 09:37:12.244"></status>
+</kw>
+<status status="FAIL" starttime="20201223 09:37:08.858" endtime="20201223 09:37:12.260"></status>
+</kw>
+<status status="FAIL" starttime="20201223 09:37:04.958" endtime="20201223 09:37:12.260"></status>
+</kw>
+<kw name="Sikuli Test Teardown" library="TestUtils" type="teardown">
+<kw name="Stop Sikuli Server" library="TestUtils">
+<kw name="Stop Remote Server" library="SikuliLibrary">
+<doc>Stops the remote server.</doc>
+<msg timestamp="20201223 09:37:12.273" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20201223 09:37:12.262" endtime="20201223 09:37:12.273"></status>
+</kw>
+<status status="PASS" starttime="20201223 09:37:12.262" endtime="20201223 09:37:12.274"></status>
+</kw>
+<kw name="Close Application" library="SikuliLibrary">
+<doc>Close application</doc>
+<arguments>
+<arg>${citrix application}</arg>
+</arguments>
+<msg timestamp="20201223 09:37:12.322" level="INFO">Params: [wfica32.exe]</msg>
+<status status="PASS" starttime="20201223 09:37:12.274" endtime="20201223 09:37:12.322"></status>
+</kw>
+<status status="PASS" starttime="20201223 09:37:12.262" endtime="20201223 09:37:12.322"></status>
+</kw>
+<status status="FAIL" starttime="20201223 09:37:04.903" endtime="20201223 09:37:12.327" critical="yes">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(Logoff..png -- not valid!) S: 0.7</status>
+</test>
+<status status="FAIL" starttime="20201223 09:36:58.426" endtime="20201223 09:37:12.328"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="RMPurchase">RMPurchase</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20201223 09:37:04.781" level="WARN">Imported resource file 'C:\EclipsePortable-All-cpf\EclipsePortable\Data\workspace\WinProcessing RMPurchase\Pages\CreatePurchasePlan.robot' is empty.</msg>
+</errors>
+</robot>
