@@ -61,12 +61,15 @@ Create Raw Material Report
     Double Click in Area with Sikuli and Deleted then Input Text-> ${Cause1} ${Cause1} with -> ${Cause1Input}
     Click Button with Sikuli -> ${SaveBtn} timeout ${3} sec.
     Click Button with Sikuli -> ${YesBtn1} timeout ${3} sec.
+    sleep   1s
     Click Button with Sikuli -> ${OkBtn1} timeout ${3} sec.
     Click Button with Sikuli -> ${ExitBTn} timeout ${3} sec.
     Click Button with Sikuli -> ${SaveBtn1} timeout ${5} sec.
     Click Button with Sikuli -> ${OkBtn1} timeout ${5} sec.
-    Click Button with Sikuli -> ${OkBtn1} timeout ${3} sec.
+    sleep   3s
     Click Button with Sikuli -> ${OkBtn6} timeout ${3} sec.
+    Click Button with Sikuli -> ${OkBtn6} timeout ${3} sec.
+    sleep   1s
     Click Button with Sikuli -> ${ExitBTn} timeout ${3} sec.
     Click Button with Sikuli -> ${OkBtn1} timeout ${3} sec.
     Double Click in Area with Sikuli -> ${GetRaw} ${GetRaw}

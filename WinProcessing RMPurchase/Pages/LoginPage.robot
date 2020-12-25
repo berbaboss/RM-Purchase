@@ -30,8 +30,9 @@ Open Remote Desktop
 Input Server IP
     Double Click in Area with Sikuli and Deleted -> ${TexField1} ${TexField1}
     Input text and Press Enter in ${texField1} with -> ${Input1}
-    Click in Area with Sikuli -> ${Area1} ${YesBtn}   
-    Click Button with Sikuli -> ${OkBtn} timeout ${3} sec.
+    Click in Area with Sikuli -> ${Area1} ${YesBtn}  
+    sleep     5s
+    Click Button with Sikuli -> ${OkBtn} timeout ${5} sec.
 
 Input user password in Remote Desktop   
     Input text in ${UsernameInput} with -> ${Username}

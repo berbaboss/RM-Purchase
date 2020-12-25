@@ -17,8 +17,8 @@ Test Setup          TestUtils.Sikuli Test Setup
 Test Teardown	    TestUtils.Sikuli Test Teardown
 
 *** Variables ***
-${IMAGE_DIR}      		${CURDIR}\\..\\Images
-${RamdomNo}            600
+${IMAGE_DIR}      	${CURDIR}\\..\\Images
+${x}                0
 
 *** Test Cases ***
 Login Winprocessing UAT
@@ -36,3 +36,6 @@ Login Winprocessing UAT
     Create Defect Test
     Create Send Weight Report
     Exit Program
+        
+  
+

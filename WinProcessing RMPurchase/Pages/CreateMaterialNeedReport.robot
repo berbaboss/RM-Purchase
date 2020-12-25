@@ -48,6 +48,7 @@ Choose Report From Sidebar
 Start Create Material Need Report
     Click Button with Sikuli -> ${AddBtn} timeout ${5} sec.
     SikuliLibrary.Press Special Key	ENTER
+    sleep  2s
     SikuliLibrary.Input text	${EMPTY}	${FactoryInput}
     #Input text and Press Enter in ${FactoryId} with -> ${FactoryInput}
     Input text and Press Enter in ${MaterialType} with -> ${MaterialInput}

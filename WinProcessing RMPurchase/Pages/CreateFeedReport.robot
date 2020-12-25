@@ -3,6 +3,7 @@ Library             SikuliLibrary
 Resource            ..\\Utils\\SikuliUtils.robot
 Resource		    ..\\Utils\\TestUtils.robot
 Resource		    ..\\Utils\\RobotUtils.robot
+Resource		    ..\\Utils\\DateUtils.robot
 
 *** Variables ***
 #Picture
@@ -63,14 +64,16 @@ ${FarmDetail}            FarmDetail.png
 ${Sequence}              Sequence.png
 ${Scroll5}               Scroll5.png
 ${Key}                   Key.png
-${RemainWeight}          RemainWeight.png                   
+${RemainWeight}          RemainWeight.png   
+${OweWeight}             OweWeight.png
+${Scroll6}               Scroll6.png
              
         
 #Input
 ${WeeklyPlanInput}       202051
 ${PurchaseTeamInput}     02
 ${MaterialInput1}        1120025
-${CatchDateInput}        17/12/2563  
+${CatchDateInput}        
 
 *** Keywords ***
 Choose Feed Report and Purchase Plan From Sidebar
@@ -80,6 +83,7 @@ Choose Feed Report and Purchase Plan From Sidebar
     Click Button with Sikuli -> ${MaterialType} timeout ${3} sec.
     ${GetPlan} =     Get text after image ${PlanNo} for another 40 pixels 
     Log To Console     ${GetPlan}
+    sleep  2s
     Input text and Press Enter in ${MaterialType} with -> ${MaterialInput}
     Input text and Press Enter in ${Farm} with -> ${FarmInput}
     Input text and Press Enter in ${Sump} with -> ${SumpInput}
@@ -103,14 +107,15 @@ Choose Feed Report and Purchase Plan From Sidebar
     Input text and Press Enter in ${PurchaseTeam} with -> ${PurchaseTeamInput}
     Click Button with Sikuli -> ${AddBtn1} timeout ${5} sec.
     Click Button with Sikuli -> ${Material} timeout ${5} sec.
+    sleep     1s
     Input text and Press Enter in ${Material} with -> ${MaterialInput1}
+    ${CatchDateInput} =      Get buddhist today
     Input text and Press Enter in ${CatchDate} with -> ${CatchDateInput}
     click in Area with Sikuli -> ${SortButton1} ${SortButton2} 
     Click Button with Sikuli -> ${ClearButton} timeout ${3} sec.
     Click Button with Sikuli -> ${RequireButton} timeout ${3} sec.
     Click Button with Sikuli -> ${DescButton} timeout ${3} sec.
-    Click Button with Sikuli -> ${Scroll5} timeout ${3} sec.
-    Click Button with Sikuli -> ${Sequence} timeout ${3} sec.
+    Click Button with Sikuli -> ${OweWeight} timeout ${3} sec.
     Click Button with Sikuli -> ${DescButton} timeout ${3} sec.
     click Button with Sikuli -> ${OkBtn3} timeout ${3} sec. 
     click in Area with Sikuli -> ${ShrimpNeed} ${SelectBox} 
@@ -118,7 +123,7 @@ Choose Feed Report and Purchase Plan From Sidebar
     Click Button with Sikuli -> ${ClearButton} timeout ${3} sec.
     Click Button with Sikuli -> ${PlanHarvestDate} timeout ${3} sec.
     Click Button with Sikuli -> ${DescButton} timeout ${3} sec.
-    Click Button with Sikuli -> ${Scroll5} timeout ${3} sec.
+    click in Area with Sikuli -> ${Scroll6} ${Scroll5} 
     Click Button with Sikuli -> ${RemainWeight} timeout ${3} sec.
     Click Button with Sikuli -> ${DescButton} timeout ${3} sec.
     click Button with Sikuli -> ${OkBtn3} timeout ${3} sec.

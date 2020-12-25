@@ -74,7 +74,7 @@ Create Catch Confirm Report
     Click Button with Sikuli -> ${ExitBtn1} timeout ${3} sec.
     Click Button with Sikuli -> ${SaveBtn1} timeout ${3} sec.
     click Button with Sikuli -> ${OkBtn2} timeout ${3} sec. 
-    click Button with Sikuli -> ${OkBtn5} timeout ${3} sec.
+    click Button with Sikuli -> ${OkBtn2} timeout ${3} sec.
     click Button with Sikuli -> ${OkBtn2} timeout ${3} sec. 
     Click Button with Sikuli -> ${ExitBtn} timeout ${3} sec.
     Click Button with Sikuli -> ${OkBtn2} timeout ${3} sec.

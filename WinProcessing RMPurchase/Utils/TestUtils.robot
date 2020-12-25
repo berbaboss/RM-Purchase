@@ -16,6 +16,7 @@ ETE Test Setup
 
 Sikuli Test Setup
     Add Needed Image Path
+    Set Move Mouse Delay    0.1
 
 Sikuli Test Teardown
 	Stop Sikuli Server	

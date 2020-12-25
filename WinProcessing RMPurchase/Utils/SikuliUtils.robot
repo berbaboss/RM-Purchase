@@ -127,11 +127,4 @@ Variable ${first} should be similar to ${second}
   	${ret} =  Set Variable if  ${miss match count} > 1  false  true
   	[Return]  ${ret} 	
 
-Check text ${text} Equal ${text1} from ${image name} for another ${height} pixels
-    Run Keyword If 
-	if ${text} != ${test1}
-	\ ${new y} =  Evaluate  ${image reg}[1] + (${image reg}[3]+${height})
-  	\ ${reg} =  Create List  ${image reg}[0]  ${new y}  ${image reg}[2]  ${height}
-  	\ Highlight Region  ${reg}  2
-  	\ ${text} =  SikuliLibrary.Read Text From Region  ${reg}
-  	[Return]  ${text}
+
